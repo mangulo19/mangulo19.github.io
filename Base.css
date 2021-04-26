@@ -9,3 +9,10 @@
 .navbar-text {
     color:white;
 } 
+.text-body{
+    font-size: 30px;
+    font-style: bold;
+}
+ .panel-default{
+     color:black;
+ }
