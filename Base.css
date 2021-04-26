@@ -1,5 +1,11 @@
     .navbar {
-        background-color:rgb(18, 16, 138);}
+        background-color:rgb(18, 16, 138);
+        height: 30px; 
+    }
 .navbar-logo {
     height: 100px;
     Width: auto;}
+
+.navbar-text {
+    color:white;
+} 
