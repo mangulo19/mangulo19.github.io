@@ -1,17 +1,17 @@
 <!doctype html>
 <html lang="en">
   
-<!--link to css stylesheets  -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/features.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
+
+    <link href="css/features.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/44cac5b96c.js" crossorigin="anonymous"></script>
   </head>
   <body>
-<!--end of css stylesheets  --> 
 
-<!-- start of navigation bar  --> 
+<nav>
+<div>
+<div class="bd-example">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
@@ -39,9 +39,6 @@
             <li><a class="dropdown-item" href="#">Cancel Order</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">About Us</a>
-        </li>
       </ul>
       <form class="d-flex">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -50,18 +47,14 @@
     </div>
   </div>
 </nav>
-<!-- end of navigation bar  --> 
 
-<!-- start of blue alert (Hi Jane)  --> 
 <div class="alert alert-primary alert-dismissible fade show" role="alert">
   Hi Jane, How can we help you?
   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 </div>
-<!-- end of blue alert (Hi Jane)  --> 
 
 
-<!-- start of Fill of Prescription  --> 
-<div class="container py-4" id="hanging-icons">
+<div class="container py-5" id="hanging-icons">
   <h2 class="pb-2 border-bottom">Fill a Prescription</h2>
   <div class="row g-5 py-5">
     <div class="col-md-4 d-flex align-items-start">
@@ -102,12 +95,14 @@
     </div>
   </div>
 </div>
-<!-- end of Fill of Prescription  --> 
 
-<div class="gray-divider"></div>
+<div class="b-example-divider"></div>
 
+<!--map-->>
+<h1 class="text-title">Map of Pharmacies</h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52846.94950644457!2d-117.74928836211828!3d34.1224305352622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c33a947ba7f65f%3A0xd57add892abc374d!2sClaremont%2C%20CA!5e0!3m2!1sen!2sus!4v1620092631350!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>" width="50%" height="500"></iframe>
+  <!--end of map-->
 
-<!-- start of Ready to FIll --> 
 <div class="container py-5" id="custom-cards">
   <h2 class="pb-2 border-bottom">Ready to Fill</h2>
 
@@ -155,109 +150,55 @@
       </div>
     </div>
     </div>
-    <br>
-  <!--map-->
-    <h2 class="pb-2 border-bottom">Map of Pharmacies</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52846.94950644457!2d-117.74928836211828!3d34.1224305352622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c33a947ba7f65f%3A0xd57add892abc374d!2sClaremont%2C%20CA!5e0!3m2!1sen!2sus!4v1620092631350!5m2!1sen!2sus" width="800px" height="600px" style="border:0;" allowfullscreen="" loading="lazy" width="50%" height="500"></iframe>
-  <!--end of map-->
   </div>
-</div>
+    </div>
 
-<!-- end of Ready to FIll --> 
+    <div class="b-example-divider"></div>
 
-    <div class="gray-divider"></div>
-    
-
-<!-- start of second section --> 
-<div class="container py-5" id="hanging-icons">
-  <h2 class="pb-2 border-bottom">Fill a Prescription</h2>
-  <div class="row g-5 py-5">
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
-      </div>
-      <div>
-        <h2>Fill a Prescription</h2>
-        <p>Order medications for home or pharmacy delivery.</p>
-        <a href="#" class="btn btn-primary">
-          Order Now
-        </a>
+    <div class="container py-5" id="hanging-icons">
+      <h2 class="pb-2 border-bottom">Fill a Prescription</h2>
+      <div class="row g-5 py-5">
+        <div class="col-md-4 d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
+          </div>
+          <div>
+            <h2>Fill a Prescription</h2>
+            <p>Order medications for home or pharmacy delivery.</p>
+            <a href="#" class="btn btn-primary">
+              Order Now
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
+          </div>
+          <div>
+            <h2>Get Advice Now</h2>
+            <p>Receive care for time-sensitive concerns and will respond back within 24 hours.</p>
+            <a href="#" class="btn btn-primary">
+              Submit a Question
+            </a>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-start">
+          <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+            <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
+          </div>
+          <div>
+            <h2>Have a Question</h2>
+            <p>Schedule a video or phone appointment now. Chat with an agent 24/7.</p>
+            <a href="#" class="btn btn-primary">
+              Chat with a Representative
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
-      </div>
-      <div>
-        <h2>Get Advice Now</h2>
-        <p>Receive care for time-sensitive concerns and will respond back within 24 hours.</p>
-        <a href="#" class="btn btn-primary">
-          Submit a Question
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
-      </div>
-      <div>
-        <h2>Have a Question</h2>
-        <p>Schedule a video or phone appointment now. Chat with an agent 24/7.</p>
-        <a href="#" class="btn btn-primary">
-          Chat with a Representative
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- end of second section --> 
-
-<div class="gray-divider"></div>
 
 
-<!-- start of Team --> 
-<div class="container py-4" id="hanging-icons">
-    <div class="container">
-      <h2 class="pb-2 border-bottom">Team</h2>
-      <div class="team-leader-block clearfix">
-          <div class="team-leader-box">
-              <div class="team-leader wow fadeInDown delay-03s"> 
-                  <div class="team-leader-shadow"><a href="#"></a></div>
-                  <!-- insert pic1 --> 
-                  <img src="img/team-leader-pic1.jpg">
-                  <!-- insert pic1 --> 
-              </div>
-              <h3 class="wow fadeInDown delay-03s">Walter White</h3>
-              <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-              <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-          </div>
-          <div class="team-leader-box">
-              <div class="team-leader  wow fadeInDown delay-06s"> 
-                  <div class="team-leader-shadow"><a href="#"></a></div>
-                  <!-- insert pic2 --> 
-                  <img src="img/team-leader-pic2.jpg">
-                  <!-- insert pic2 --> 
-              </div>
-              <h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
-              <span class="wow fadeInDown delay-06s">Product Manager</span>
-              <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-          </div>
-          <div class="team-leader-box">
-              <div class="team-leader wow fadeInDown delay-09s"> 
-                  <div class="team-leader-shadow"><a href="#"></a></div>
-                  <!-- insert pic3 --> 
-                  <img src="img/team-leader-pic3.jpg">
-                  <!-- insert pic3 --> 
-              </div>
-              <h3 class="wow fadeInDown delay-09s">Skyler white</h3>
-              <span class="wow fadeInDown delay-09s">Accountant</span>
-              <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-          </div>
-      </div>
-  </div>
-</div>
-<!-- end of Team --> 
+    <div class="b-example-divider"></div>
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
