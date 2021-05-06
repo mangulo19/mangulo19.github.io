@@ -11,13 +11,15 @@
     <script src="https://kit.fontawesome.com/44cac5b96c.js" crossorigin="anonymous"></script>
 
 <!-- javascript for chatbox pop -->
-    <script>
-      // When the user clicks on div, open the popup
-      function myFunction() {
-        var popup = document.getElementById("myPopup");
-        popup.classList.toggle("show");
-      }
-      </script>
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
 <!-- end of javascript for chatbox pop -->
 </head>
 
@@ -186,8 +188,6 @@
 </div>
 <!--end of map-->
 
-
-
 <!-- end of Ready to FIll --> 
 
     <div class="gray-divider"></div>
@@ -285,6 +285,8 @@
 <!-- end of Team --> 
 
 <!-- chat box -->
+<button class="open-button" onclick="openForm()">Chat</button>
+
 <div class="chat-popup" id="myForm">
   <form class="form-container">
     <h1>Chat</h1>
