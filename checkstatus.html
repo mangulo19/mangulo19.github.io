@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en">
-  
+<head>
 <!--link to css stylesheets  -->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/features.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_home.css" rel="stylesheet">
+    <link href="css/shipping.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/44cac5b96c.js" crossorigin="anonymous"></script>
+    
   </head>
   <body>
 <!--end of css stylesheets  --> 
-
 <!-- start of navigation bar  --> 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -59,205 +60,142 @@
 </div>
 <!-- end of blue alert (Hi Jane)  --> 
 
-
-<!-- start of Fill of Prescription  --> 
-<div class="container py-4" id="hanging-icons">
-  <h2 class="pb-2 border-bottom">Fill a Prescription</h2>
-  <div class="row g-5 py-5">
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <i class="fas fa-pills"></i>
-      </div>
-      <div>
-        <h2>Fill a Prescription</h2>
-        <p>Order medications for home or pharmacy delivery.</p>
-        <a href="order.html" class="btn btn-primary">
-          Order Now
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <i class="fas fa-tasks"></i>
-      </div>
-      <div>
-        <h2>Get Advice Now</h2>
-        <p>Receive care for time-sensitive concerns and will respond back within 24 hours.</p>
-        <a href="#" class="btn btn-primary">
-          Submit a Question
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <i class="far fa-comments"></i>
-      </div>
-      <div>
-        <h2>Have a Question?</h2>
-        <p>Schedule a video or phone appointment now. Chat with an agent 24/7.</p>
-        <a href="#" class="btn btn-primary">
-          Chat with a Representative
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end of Fill of Prescription  --> 
-
-<div class="gray-divider"></div>
-
-
-<!-- start of Ready to FIll --> 
-<div class="container py-5" id="custom-cards">
-  <h2 class="pb-2 border-bottom">Ready to Fill</h2>
-
-  <div>
-    <div class="bd-example">
-    <div class="accordion" id="accordionExample">
-      <div class="accordion-item">
-        <h4 class="accordion-header" id="headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <Strong>Metformin - 500 mg</Strong>
-          </button>
-        </h4>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-          <strong>Last Refilled On:</strong> 1/15/2021<br>
-          <strong>Refills Remaining:</strong> 1
-          </div>
+<!-- end of shipping status --> 
+<div class="container py-8" id="hanging-icons">
+  <br>
+  <h2 class="pb-2 border-bottom">Order Status</h2>
+  <br>
+    <div id="main-content" class="bg-white border">
+        <div class="d-flex flex-column">
+            <div class="h5">Hello Jane,</div>
+            <div>Logged in as: janedoe@gmail.com</div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h4 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            <Strong>Lisinopril - 10mg</Strong>
-          </button>
-        </h4>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>Last Refilled On:</strong> 2/10/2021<br>
-            <strong>Refills Remaining:</strong> 0
+        <div class="d-flex my-4 flex-wrap">
+            <div class="box me-4 my-1 bg-light2"> <img src="https://www.freepnglogos.com/uploads/box-png/cardboard-box-brown-vector-graphic-pixabay-2.png" alt="">
+                <div class="d-flex align-items-center mt-2">
+                    <div class="tag">Orders placed</div>
+                    <div class="ms-auto number">3</div>
+                </div>
+            </div>
+            <div class="box me-4 my-1 bg-light2"> <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-campus-recreation-university-nebraska-lincoln-30.png" alt="">
+                <div class="d-flex align-items-center mt-2">
+                    <div class="tag">Items in Cart</div>
+                    <div class="ms-auto number">0</div>
+                </div>
+            </div>
+            <div class="box me-4 my-1 bg-light2"> <img src="https://www.freepnglogos.com/uploads/tick-png/check-mark-tick-vector-graphic-21.png">
+                <div class="d-flex align-items-center mt-2">
+                    <div class="tag">Completed</div>
+                    <div class="ms-auto number">1</div>
+                </div>
             </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h4 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            <Strong>Atorvastatin - 10 mg</Strong>
-          </button>
-        </h4>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-          <div class="accordion-body">
-            <strong>Last Refilled On:</strong> 3/03/2021<br>
-            <strong>Refills Remaining:</strong> 2
+        <div class="text-uppercase">My recent orders</div>
+        <div class="order my-3 bg-light2">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="d-flex flex-column justify-content-between order-summary">
+                        <div class="d-flex align-items-center">
+                            <div class="text-uppercase">Saxagliptin 5 mg-metformin ER 500 mg tablet</div>
+                        </div>
+                        <div class="fs-8">
+                          <strong><u>Last Filled On</u></strong>: 1/15/2021 <br>
+                          <strong><u>Refills Remaining</u></strong>: 1 <br>
+                          <strong><u>Status</strong></u>: This prescription is now available for refill. For more information, call the pharmacy number shown on your prescription label.<br> 
+                          <strong><u>Rx Number</strong></u>: 1257892
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
+                        <div class="status">Status : Delivered</div>
+                        <div class="btn btn-primary text-uppercase">order info</div>
+                    </div>
+                    <div class="progressbar-track">
+                        <ul class="progressbar">
+                            <li id="step-1" class="text-muted green"> <span class="fas fa-gift"></span> </li>
+                            <li id="step-2" class="text-muted green"> <span class="fas fa-check"></span> </li>
+                            <li id="step-3" class="text-muted green"> <span class="fas fa-box"></span> </li>
+                            <li id="step-4" class="text-muted green"> <span class="fas fa-truck"></span> </li>
+                            <li id="step-5" class="text-muted green"> <span class="fas fa-box-open"></span> </li>
+                        </ul>
+                        <div id="tracker"></div>
+                    </div>
+                </div>
             </div>
         </div>
-      </div>
-    </div>
-    </div>
-    <br>
-  <!--map-->
-    <h2 class="pb-2 border-bottom">Map of Pharmacies</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52846.94950644457!2d-117.74928836211828!3d34.1224305352622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c33a947ba7f65f%3A0xd57add892abc374d!2sClaremont%2C%20CA!5e0!3m2!1sen!2sus!4v1620092631350!5m2!1sen!2sus" width="800px" height="600px" style="border:0;" allowfullscreen="" loading="lazy" width="50%" height="500"></iframe>
-  <!--end of map-->
-  </div>
-</div>
-
-<!-- end of Ready to FIll --> 
-
-    <div class="gray-divider"></div>
-    
-
-<!-- start of second section --> 
-<div class="container py-5" id="hanging-icons">
-  <h2 class="pb-2 border-bottom">Fill a Prescription</h2>
-  <div class="row g-5 py-5">
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2"/></svg>
-      </div>
-      <div>
-        <h2>Fill a Prescription</h2>
-        <p>Order medications for home or pharmacy delivery.</p>
-        <a href="#" class="btn btn-primary">
-          Order Now
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#cpu-fill"/></svg>
-      </div>
-      <div>
-        <h2>Get Advice Now</h2>
-        <p>Receive care for time-sensitive concerns and will respond back within 24 hours.</p>
-        <a href="#" class="btn btn-primary">
-          Submit a Question
-        </a>
-      </div>
-    </div>
-    <div class="col-md-4 d-flex align-items-start">
-      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-        <svg class="bi" width="1em" height="1em"><use xlink:href="#tools"/></svg>
-      </div>
-      <div>
-        <h2>Have a Question</h2>
-        <p>Schedule a video or phone appointment now. Chat with an agent 24/7.</p>
-        <a href="#" class="btn btn-primary">
-          Chat with a Representative
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- end of second section --> 
-
-<div class="gray-divider"></div>
-
-
-<!-- start of Team --> 
-<div class="container py-4" id="hanging-icons">
-    <div class="container">
-      <h2 class="pb-2 border-bottom">Team</h2>
-      <div class="team-leader-block clearfix">
-          <div class="team-leader-box">
-              <div class="team-leader wow fadeInDown delay-03s"> 
-                  <div class="team-leader-shadow"><a href="#"></a></div>
-                  <!-- insert pic1 --> 
-                  <img src="img/team-leader-pic1.jpg">
-                  <!-- insert pic1 --> 
+        <div class="order my-3 bg-light2">
+            <div class="row">
+              <div class="col-lg-5">
+                <div class="d-flex flex-column justify-content-between order-summary">
+                    <div class="d-flex align-items-center">
+                        <div class="text-uppercase">NovoLog Insulin 100 unit/mL (70/30) subcutaneous pen </div>
+                    </div>
+                    <div class="fs-8">
+                      <strong><u>Last Filled On</u></strong>: 4/25/2021 <br>
+                      <strong><u>Refills Remaining</u></strong>: 3 <br>
+                      <strong><u>Status</strong></u>: This prescription is now available for refill. For more information, call the pharmacy number shown on your prescription label.<br> 
+                      <strong><u>Rx Number</strong></u>: 4578203
+                    </div>
+                </div>
+            </div>
+                <div class="col-lg-7">
+                    <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
+                        <div class="status">Status : Delivered</div>
+                        <div class="btn btn-primary text-uppercase">order info</div>
+                    </div>
+                    <div class="progressbar-track">
+                        <ul class="progressbar">
+                            <li id="step-1" class="text-muted green"> <span class="fas fa-gift"></span> </li>
+                            <li id="step-2" class="text-muted green"> <span class="fas fa-check"></span> </li>
+                            <li id="step-3" class="text-muted"> <span class="fas fa-box"></span> </li>
+                            <li id="step-4" class="text-muted"> <span class="fas fa-truck"></span> </li>
+                            <li id="step-5" class="text-muted"> <span class="fas fa-box-open"></span> </li>
+                        </ul>
+                        <div id="tracker"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order my-3 bg-light2">
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="d-flex flex-column justify-content-between order-summary">
+                  <div class="d-flex align-items-center">
+                      <div class="text-uppercase">Lisinopril 20 mg tablet </div>
+                  </div>
+                  <div class="fs-8">
+                    <strong><u>Last Filled On</u></strong>: 3/6/2021 <br>
+                    <strong><u>Refills Remaining</u></strong>: 0 <br>
+                    <strong><u>Status</strong></u>: In order to fill lisinopril, we need your physician's authorization. We will contact your physician for you and fill this prescription once we have received the authorization.
+                    <br> 
+                    <strong><u>Rx Number</strong></u>: 4678235
+                  </div>
               </div>
-              <h3 class="wow fadeInDown delay-03s">Walter White</h3>
-              <span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-              <p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
           </div>
-          <div class="team-leader-box">
-              <div class="team-leader  wow fadeInDown delay-06s"> 
-                  <div class="team-leader-shadow"><a href="#"></a></div>
-                  <!-- insert pic2 --> 
-                  <img src="img/team-leader-pic2.jpg">
-                  <!-- insert pic2 --> 
+              <div class="col-lg-7">
+                  <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
+                      <div class="status">Status : Delivered</div>
+                      <div class="btn btn-primary text-uppercase">order info</div>
+                  </div>
+                  <div class="progressbar-track">
+                      <ul class="progressbar">
+                          <li id="step-1" class="text-muted green"> <span class="fas fa-gift"></span> </li>
+                          <li id="step-2" class="text-muted green"> <span class="fas fa-check"></span> </li>
+                          <li id="step-3" class="text-muted green"> <span class="fas fa-box"></span> </li>
+                          <li id="step-4" class="text-muted"> <span class="fas fa-truck"></span> </li>
+                          <li id="step-5" class="text-muted"> <span class="fas fa-box-open"></span> </li>
+                      </ul>
+                      <div id="tracker"></div>
+                  </div>
               </div>
-              <h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
-              <span class="wow fadeInDown delay-06s">Product Manager</span>
-              <p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-          </div>
-          <div class="team-leader-box">
-              <div class="team-leader wow fadeInDown delay-09s"> 
-                  <div class="team-leader-shadow"><a href="#"></a></div>
-                  <!-- insert pic3 --> 
-                  <img src="img/team-leader-pic3.jpg">
-                  <!-- insert pic3 --> 
-              </div>
-              <h3 class="wow fadeInDown delay-09s">Skyler white</h3>
-              <span class="wow fadeInDown delay-09s">Accountant</span>
-              <p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
           </div>
       </div>
-  </div>
+    </div>
 </div>
-<!-- end of Team --> 
+<br>
+
+<!-- end of shipping status --> 
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
