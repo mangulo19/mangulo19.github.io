@@ -1,16 +1,27 @@
 <!doctype html>
 <html lang="en">
-  
+<head>
 <!--link to css stylesheets  -->
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/features.css" rel="stylesheet">
     <link href="css/style_home.css" rel="stylesheet">
     <link href="css/chatbox.css" rel="stylesheet">
+<!--end of css stylesheets  --> 
 
     <script src="https://kit.fontawesome.com/44cac5b96c.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-<!--end of css stylesheets  --> 
+
+<!-- javascript for chatbox pop -->
+    <script>
+      // When the user clicks on div, open the popup
+      function myFunction() {
+        var popup = document.getElementById("myPopup");
+        popup.classList.toggle("show");
+      }
+      </script>
+<!-- end of javascript for chatbox pop -->
+</head>
+
+<body>
 
 <!-- start of navigation bar  --> 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -285,6 +296,8 @@
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
+
+<!-- chat box -->
 
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
 
