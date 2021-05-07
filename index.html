@@ -29,7 +29,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="img/drone-delivery.png" width="50" height="50" class="d-inline-block align-top" alt="Bootstrap" loading="lazy"
+      <img src="img/drone-delivery.png" width="50" height="50" class="d-inline-block align-top"
            style="filter: invert(1) grayscale(100%) brightness(200%);">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -120,20 +120,20 @@
 <div class="gray-divider"></div>
 
 
-<!-- start of Ready to FIll --> 
+ 
 <div class="container py-5" id="custom-cards">
   <h2 class="pb-2 border-bottom">Ready to Fill</h2>
-
+  <!-- start of Ready to FIll --> 
   <div>
     <div class="bd-example">
-    <div class="accordion" id="accordionExample">
+    <div class="accordion">
       <div class="accordion-item">
         <h4 class="accordion-header" id="headingOne">
           <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             <Strong>Metformin - 500 mg</Strong>
           </button>
         </h4>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
           <div class="accordion-body">
           <strong>Last Refilled On:</strong> 1/15/2021<br>
           <strong>Refills Remaining:</strong> 1
@@ -146,7 +146,7 @@
             <Strong>Lisinopril - 10mg</Strong>
           </button>
         </h4>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
           <div class="accordion-body">
             <strong>Last Refilled On:</strong> 2/10/2021<br>
             <strong>Refills Remaining:</strong> 0
@@ -159,7 +159,7 @@
             <Strong>Atorvastatin - 10 mg</Strong>
           </button>
         </h4>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
           <div class="accordion-body">
             <strong>Last Refilled On:</strong> 3/03/2021<br>
             <strong>Refills Remaining:</strong> 2
@@ -171,62 +171,53 @@
     <br>
     <br>
     <br>
- <!--Map Description-->
- <h2 class="MapHeader">Service Locations Supported</h2>
- <h3 class="maptext">Listed in these three maps show the current areas that Pharmacy Drone Delivery caters to. We will be expanding our drop-off locations in weeks to come!</h3>
- <!--End of Map Description-->
-  <br>
-  <br>
+    <!-- end of Ready to FIll --> 
 
-  <!--Claremont map-->
-    <h2 class="pb-2 border-bottom">Map of Pharmacies in Claremont</h2>
-    <iframe src="https://www.google.com/maps/d/embed?mid=1AOKMmX1bxCe8UTdCXR0ba4dP85G3BO1e" width="640" height="480"></iframe>
-  <!--end of map 1-->
+    <!--Map Description-->
+      <h2 class="MapHeader">Service Locations Supported</h2>
+      <h3 class="maptext">Listed in these three maps show the current areas that Pharmacy Drone Delivery caters to. We will be expanding our drop-off locations in weeks to come!</h3>
+    <!--End of Map Description-->
+      <br>
+      <br>
 
-<!--Riverside map-->
-<h2 class="pb-2 border-bottom">Map of Pharmacies in Riverside</h2>
-<iframe src="https://www.google.com/maps/d/embed?mid=1it58yNBtxPMvbNITesbcWIIK0f64bqxK" width="640" height="480"></iframe>
-  
-<!--Loa Angeles map-->
-<h2 class="pb-2 border-bottom">Map of Pharmacies in Long Beach</h2>
-<iframe src="https://www.google.com/maps/d/embed?mid=1Vsw4ENiEYIi68hgfaU4fncOTdrfnRfbl" width="640" height="480"></iframe>
-<!--end of map-->
+    <!--Claremont map-->
+      <h2 class="pb-2 border-bottom">Map of Pharmacies in Claremont</h2>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1AOKMmX1bxCe8UTdCXR0ba4dP85G3BO1e" width="640" height="480"></iframe>
+    <!--end of map 1-->
 
+    <!--Riverside map-->
+      <h2 class="pb-2 border-bottom">Map of Pharmacies in Riverside</h2>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1it58yNBtxPMvbNITesbcWIIK0f64bqxK" width="640" height="480"></iframe>
+      
+    <!--Los Angeles map-->
+      <h2 class="pb-2 border-bottom">Map of Pharmacies in Long Beach</h2>
+      <iframe src="https://www.google.com/maps/d/embed?mid=1Vsw4ENiEYIi68hgfaU4fncOTdrfnRfbl" width="640" height="480"></iframe>
+    <!--end of map-->
+  </div>
 </div>
-</div>
-<!--end of map-->
-
-<!-- end of Ready to FIll --> 
 
 <div class="gray-divider"></div>
 
-<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+<div class="container py-5" id="custom-cards">
+  <h2 class="pb-2 border-bottom">Submit a Question</h2>
   <div class="form">
-      
-        <div id="sendmessage">Your message has been sent. Thank you!</div>
-        <div id="errormessage"></div>
         <form action="" method="post" role="form" class="contactForm">
             <div class="form-group">
-                <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
+                <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name"/>
             </div>
             <div class="form-group">
-                <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
+                <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email"/>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
+                <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject"/>
             </div>
             <div class="form-group">
-                <textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                <div class="validation"></div>
+                <textarea class="form-control input-text text-area" name="message" rows="5" placeholder="Message"></textarea>
             </div>
             
             <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
         </form>
     </div>	
-</div>
 </div>
 
 <!-- chat box -->
@@ -243,11 +234,7 @@
     <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
   </form>
 </div>
-
 <!-- chat box -->
-
     <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-
-      
   </body>
 </html>
