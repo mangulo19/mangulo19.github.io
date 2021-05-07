@@ -45,7 +45,6 @@ a, a:hover, a:active{ outline:0px !important}
 
 /* Header Styles
 ---------------------------------*/
-
 .header{
 	text-align:center;
 	background:url(../img/pw_maze_black_2X.png) left top repeat;
@@ -122,8 +121,30 @@ color: #fff;
 	color:#fff !important;
 }
 
+.MapHeader{
+	text-align: center;
+	color:rgb(16, 64, 197);
+}
+.maptext{
+	text-align: center;
+}
+
 /* Team
 ---------------------------------*/
+.aboutus{
+	text-align: center;
+	color:rgb(16, 64, 197)
+}
+
+.teamheader{
+	text-align: center;
+	color:rgb(16, 64, 197)
+}
+
+.teamtext{
+	text-align: center;
+	font-size: 18px;
+}
 .team-leader-block{
 	max-width:993px;
 	margin:0 auto;
