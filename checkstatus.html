@@ -2,6 +2,46 @@
 <html lang="en">
 <head>
 <!--link to css stylesheets  -->
+<style>
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+    </style>
     <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/features.css" rel="stylesheet">
     <link href="css/style_home.css" rel="stylesheet">
@@ -108,8 +148,33 @@
                 <div class="col-lg-7">
                     <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
                         <div class="status">Status : Delivered</div>
-                        <div class="btn btn-primary text-uppercase">cancel order</div>
-                        <button id="myBtn">Open Modal</button>
+                        <button class="btn btn-primary text-uppercase" id="myBtn">cancel order2</button>
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+                          <div class="modal-dialog" role="document">
+                          <!-- Modal content -->
+                            <div class="modal-content" >
+                              <div class="modal-header">
+                                <h5>Cancel Confirmation</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="form-group">
+                                    <label>Reason for Cancellation</label>
+                                    <textarea class="form-control"></textarea>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" >Close</button>
+                                <button type="button" class="btn btn-primary">Cancel Order</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                     <div class="progressbar-track">
                         <ul class="progressbar">
@@ -198,6 +263,34 @@
 <!-- end of shipping status --> 
 
 </div>
+
+<script>
+  // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
       
   </body>
 </html>

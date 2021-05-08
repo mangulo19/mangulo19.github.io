@@ -47,7 +47,7 @@
 </head>
 <body>
 <!-- Trigger/Open The Modal -->
-<button id="myBtn">Cancel Order</button>
+<button id="myModal">Cancel Order</button>
 
 <!-- The Modal -->
 
@@ -70,13 +70,13 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" >Close</button>
-        <button type="button" class="btn btn-primary">Cancel Order</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" >Close</button>
+        <button type="button" class="btn btn-primary" class="close">Cancel Order</button>
       </div>
     </div>
   </div>
 </div>
-
+<!-- 
 <script>
   // Get the modal
 var modal = document.getElementById("myModal");
@@ -104,6 +104,15 @@ window.onclick = function(event) {
   }
 }
 </script>
-  
+  -->
+
+  <script>
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myModal").modal("show");
+        });
+    });
+    </script>
+    
 </body>
 </html>
