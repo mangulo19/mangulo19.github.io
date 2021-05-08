@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!--link to css stylesheets  -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/features.css" rel="stylesheet">
+    <link href="css/style_home.css" rel="stylesheet">
+    <link href="css/chatbox.css" rel="stylesheet">
+<!--end of css stylesheets  --> 
+
+<script src="js/bootstrap.js"></script>
+<script src="https://kit.fontawesome.com/44cac5b96c.js" crossorigin="anonymous"></script>
+
+<!-- javascript for chatbox pop -->
+  <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+  </script>
+<!-- end of javascript for chatbox pop -->
+</head>
+
+<body>
+
+<!-- start of navigation bar  --> 
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="img/drone-delivery.png" width="50" height="50" class="d-inline-block align-top"
+           style="filter: invert(1) grayscale(100%) brightness(200%);">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pharmacy.html">Pharmacy</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Order
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="order.html">Order Now</a></li>
+            <li><a class="dropdown-item" href="checkstatus.html">Order Status</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- end of navigation bar  --> 
+
+<!-- start of blue alert (Hi Jane)  --> 
+<div class="alert alert-primary alert-dismissible fade show" role="alert">
+  <h2 class="jane">Hi Jane, How can we help you?</h2>
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<!-- end of blue alert (Hi Jane)  --> 
+
+<div class="gray-divider"></div>
+
+<div class="container py-5" id="custom-cards">
+  <h2 class="pb-2 border-bottom">Submit a Question</h2>
+  <div class="form">
+        <form action="" method="post" role="form" class="contactForm">
+            <div class="form-group">
+                <input type="text" name="name" class="form-control input-text" id="name" placeholder="Your Name"/>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control input-text" name="email" id="email" placeholder="Your Email"/>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Subject"/>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control input-text text-area" name="message" rows="5" placeholder="Message"></textarea>
+            </div>
+            
+            <div class="text-center"><button type="submit" class="input-btn">Send Message</button></div>
+        </form>
+    </div>	
+</div>
