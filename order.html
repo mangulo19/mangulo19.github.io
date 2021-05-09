@@ -16,6 +16,7 @@
         font-size: 3.5rem;
       }
     }
+    
   </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/features.css" rel="stylesheet">
@@ -114,147 +115,46 @@
   </div>
 </div>
 
-<!-- start of calendar -->
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-6 text-center mb-5">
-      <h2 class="heading-section">Choose a date</h2>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <div class="elegant-calencar d-md-flex">
-        <div class="wrap-header d-flex align-items-center">
-          <p id="reset">reset</p>
-          <div id="header" class="p-0">
-            <div class="pre-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-left"></i></div>
-            <div class="head-info">
-                <div class="head-day"></div>
-                <div class="head-month"></div>
-            </div>
-            <div class="next-button d-flex align-items-center justify-content-center"><i class="fa fa-chevron-right"></i></div>
-          </div>
-        </div>
-        <div class="calendar-wrap">
-          <table id="calendar">
-            <thead>
-                <tr>
-                    <th>Sun</th>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                    <th>Sat</th>
-                </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- end of calendar -->
-
-
 <div class="container py-5" id="hanging-icons">
 <div>
   <div class="bd-example">
   <form class="row g-3">
     <div class="col-md-4">
-      <label for="validationServer01" class="form-label">First name</label>
-      <input type="text" class="form-control is-valid" id="validationServer01" required>
-      <div class="valid-feedback">
-        
+      <label class="form-label">First name</label>
+      <input type="text" class="form-control is-valid">
       </div>
     </div>
     <div class="col-md-4">
       <label for="validationServer02" class="form-label">Last name</label>
-      <input type="text" class="form-control is-valid" id="validationServer02" required>
+      <input type="text" class="form-control is-valid" required>
       <div class="valid-feedback">
         
       </div>
     </div>
     <div class="col-md-5">
       <label for="validationServer03" class="form-label">Address</label>
-      <input type="text" class="form-control is-valid" id="validationServer03" required>
+      <input type="text" class="form-control is-valid" required>
       <div class="invalid-feedback">
         Please provide a valid address
       </div>
     </div>
     <div class="col-md-3">
         <label for="validationServer03" class="form-label">Apartment/Unit</label>
-        <input type="text" class="form-control is-valid" id="validationServer03" required>
+        <input type="text" class="form-control is-valid" required>
         <div class="invalid-feedback">
           Please provide a valid city.
         </div>
     </div>
     <div class="col-md-4">
       <label for="validationServer03" class="form-label">City</label>
-      <input type="text" class="form-control is-valid" id="validationServer03" required>
+      <input type="text" class="form-control is-valid" required>
       <div class="invalid-feedback">
         Please provide a valid city.
       </div>
     </div>
     <div class="col-md-3">
       <label for="validationServer04" class="form-label">State</label>
-      <select class="form-select is-valid" id="validationServer04" required>
+      <select class="form-select is-valid" required>
         <option selected disabled value="">Choose...</option>
         <option>CA</option>
       </select>
@@ -264,7 +164,7 @@
     </div>
     <div class="col-md-4">
       <label for="validationServer05" class="form-label">Zip</label>
-      <input type="text" class="form-control is-valid" id="validationServer05" required>
+      <input type="text" class="form-control is-valid" required>
       <div class="invalid-feedback">
         Please provide a valid zip.
       </div>
@@ -281,24 +181,37 @@
         </select>
       </div>
     </div>
-    <div class="col-12">
-      <div class="form-check">
-        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
-        <label class="form-check-label" for="invalidCheck3">
-          Agree to terms and conditions
-        </label>
-        <div class="invalid-feedback">
-          You must agree before submitting.
+    <div class="col-md-4">
+      <label class="form-label">Date</label>
+      <input type="date" id="start" name="trip-start"
+       value="2018-07-22"
+       min="2018-01-01" max="2018-12-31">
+      </div>
+    </div>
+    <div class="col-md-4">
+      <label class="form-label">Time to be Delivered</label>
+      <input type="time" id="appt" name="appt"
+            min="09:00" max="18:00" required>
+      <small>Available Time</small>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+          <label class="form-check-label" for="invalidCheck3">
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit"><a href="orderconfirmation.html" style="color: white" >Submit Form</a></button>
+      
+          </div>
         </div>
       </div>
     </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit"><a href="orderconfirmation.html" style="color: white" >Submit Form</a></button>
-
-    </div>
   </form>
   </div>
-
 </div>
 
 
